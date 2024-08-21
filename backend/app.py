@@ -83,7 +83,7 @@ def detect_intent(message):
     elif "confirm" in message:
         return "confirm_booking"
     else:
-        return "unknown"
+        return "book_ticket"
 
 @app.route('/api/chatbot', methods=['POST'])
 def chatbot():
